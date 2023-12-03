@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FaUsers } from "react-icons/fa6";
 import { FaHandsHelping } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
+import { MdAnalytics } from "react-icons/md";
 import { ActiveLink } from "../ActiveLink";
 
 export const SideBar = () => {
@@ -35,13 +36,17 @@ export const SideBar = () => {
           title="Ajuda"
           icon={<FaHandsHelping className="text-gray-400" />}
         />
+        {/* <ActiveLink
+          href="/graphic"
+          title="Gráfico"
+          icon={<MdAnalytics className="text-gray-400" />}
+        /> */}
         <ActiveLink
           href="/settings"
           title="Configurações"
           icon={<IoMdSettings className="text-gray-400" />}
         />
       </div>
-
     </aside>
   );
 };
